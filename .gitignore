@@ -47,3 +47,5 @@ yarn-error.log*
 
 # 기존 설정 유지
 교안/
+
+노트(with obsidian)/.obsidian/
