@@ -15,8 +15,8 @@ vector<string> split(const string& input, string delimiter){
 }
 
 int main(){
-    string str = "apple--->banana--->orange--->grape";
-    vector<string> fruits = split(str, "--->");
+    string str = "apple---->banana---->orange---->grape";
+    vector<string> fruits = split(str, "---->");
     for (const string& fruit : fruits){
         cout << fruit << endl;
     }
