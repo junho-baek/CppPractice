@@ -1,24 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-vector<string> split(const string& input, string delimiter){
-    vector<string> result;
-    auto start = 0;
-    auto end = input.find(delimiter);
-    while(end != string::npos){
-        result.push_back(input.substr(start, end - start));
-        start = end + delimiter.size();
-        end = input.find(delimiter, start);
-    }
-    result.push_back(input.substr(start));
-    return result;
-}
-
+int a[3] = { 23, 13, 11};
 int main(){
-    string str = "apple---->banana---->orange---->grape";
-    vector<string> fruits = split(str, "---->");
-    for (const string& fruit : fruits){
-        cout << fruit << endl;
-    }
-    return 0;
+    //포인터 선언/ 할당을 a 라는 array이름으로 하면..?
+    int *c = a;
+    cout << c << "\n";
+    cout << &a[0] << "\n"; // array to pointer decay 현상. 어레이의 첫번째 요소의 주소값이 선언된 c에 할당됌.
+    cout << *c << "\n"; // 역참조로 어떤 값이 들어있는지 확인 // 23이 들어가 있음
+    cout << *(c+1) << "\n"; // 그 다음 것은 13..!
 }
