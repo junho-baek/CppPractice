@@ -8,6 +8,9 @@ int maxInt = 0;
 char maxChar;
 
 int main(){
+    cin.tie(NULL);
+    ios_base::sync_with_stdio(false);
+
     cin >> s;
     for(char i : s){
         mp[toupper(i)]++;
